@@ -4,7 +4,14 @@ const cors = require('cors')
 
 const app = express()
 
-app.use(cors())
+//Configure Cors
+const corsOptions = {
+    origin: process.env.FRONTEND_URL,
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    allowedHeaders: ["Content-Type", "Authorization"]
+};
+
+app.use(cors(corsOptions))
 
 
 app.use(express.json())
