@@ -1,0 +1,115 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.4rem;
+  background-color: #212121;
+}
+main .logo{
+  position: absolute;
+  top: 1.5rem ;
+  left: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+main h1{
+  color: #fff;
+}
+
+main .left{
+  height: fit-content;
+  width: 70%;
+}
+
+main .right {
+  /* height: 100%; */
+  width:  70%;
+  border-radius: 0.7rem;
+  overflow: auto;
+}
+
+main .left {
+  /* background-color: #000000; */
+  position: relative;
+  
+ 
+}
+
+.left .code,
+.code pre,
+.code pre code {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  border-radius: 40px;
+  background-color: #303030;
+}
+
+main .left .review {
+  position: absolute;
+  bottom: 0.95rem;
+  right: 1rem;
+  background-color: rgb(219, 219, 255);
+  color: #000000;
+  padding: 0.5rem 2rem;
+  font-weight: 500;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 0.7rem;
+}
+
+
+main .right {
+  background-color: #343434;
+  padding: 1.5rem  3rem;
+  font-size: 1.3rem;
+  /* overflow: auto; */
+}
+
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+  main{
+    justify-content: start;
+    gap: 3rem;
+  }
+  main h1{
+    text-align: center;
+  }
+  main .logo{
+    position: relative;
+    color: #fff;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0 
+    ;
+    
+  }
+  main .left{
+    width: 100%;
+    color: white;
+  }
+  main .right{
+    width: 100%;
+    height: 100%;
+    color: white;
+  }
+}
